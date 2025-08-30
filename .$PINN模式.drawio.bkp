@@ -1,0 +1,70 @@
+<mxfile host="Electron" modified="2025-08-29T11:21:38.970Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.6.4 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="MvJAnc2YWKzNq0kzfdBQ" version="24.6.4" type="device">
+  <diagram name="第 1 页" id="fl67PcK4924TbHigp-yn">
+    <mxGraphModel dx="989" dy="582" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nIBSbE9vWHMpIQLt7zbR-7" value="geom几何区域（dde.geometry.）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="555" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="nIBSbE9vWHMpIQLt7zbR-8" value="pde物理方程(函数返回残差，列表形式)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="555" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="nIBSbE9vWHMpIQLt7zbR-9" value="bcs初始/边界条件/约束（&lt;span id=&quot;docs-internal-guid-44a29c57-7fff-79a1-7c3c-ddf15aa7a22c&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif; color: rgb(27, 28, 29); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;dde.icbc.&lt;/span&gt;&lt;/span&gt;），也为数据损失" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="555" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="nIBSbE9vWHMpIQLt7zbR-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nIBSbE9vWHMpIQLt7zbR-10" target="nIBSbE9vWHMpIQLt7zbR-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nIBSbE9vWHMpIQLt7zbR-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nIBSbE9vWHMpIQLt7zbR-10" target="nIBSbE9vWHMpIQLt7zbR-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nIBSbE9vWHMpIQLt7zbR-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nIBSbE9vWHMpIQLt7zbR-10" target="nIBSbE9vWHMpIQLt7zbR-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nIBSbE9vWHMpIQLt7zbR-10" value="PINN&lt;br&gt;定义问题" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nIBSbE9vWHMpIQLt7zbR-14" value="整合数据（&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;dde.data.&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;）&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nIBSbE9vWHMpIQLt7zbR-27" value="num_domain 计算域中生成多少个点" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="150" y="630" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nIBSbE9vWHMpIQLt7zbR-29" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.025;entryY=0.363;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.875;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="nIBSbE9vWHMpIQLt7zbR-27" target="nIBSbE9vWHMpIQLt7zbR-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220.32000000000005" y="700" as="sourcePoint" />
+            <mxPoint x="260" y="691.52" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nIBSbE9vWHMpIQLt7zbR-30" value="num_boundary&lt;br&gt;几何域边界上生成多少个点" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="140" y="751.52" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nIBSbE9vWHMpIQLt7zbR-31" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="nIBSbE9vWHMpIQLt7zbR-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="801.52" as="sourcePoint" />
+            <mxPoint x="260" y="761.52" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nIBSbE9vWHMpIQLt7zbR-33" value="&lt;span id=&quot;docs-internal-guid-a871a425-7fff-0b59-21f7-ce2c17f34d6a&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: &amp;quot;Google Sans Text&amp;quot;, sans-serif; color: rgb(27, 28, 29); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;net = dde.nn.&lt;br/&gt;神经网络架构&lt;/span&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nIBSbE9vWHMpIQLt7zbR-34" value="dde.Model&lt;br&gt;建模" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="832" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nIBSbE9vWHMpIQLt7zbR-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.465;entryY=0.068;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="nIBSbE9vWHMpIQLt7zbR-14" target="nIBSbE9vWHMpIQLt7zbR-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nIBSbE9vWHMpIQLt7zbR-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.462;entryY=0.076;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="nIBSbE9vWHMpIQLt7zbR-33" target="nIBSbE9vWHMpIQLt7zbR-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nIBSbE9vWHMpIQLt7zbR-38" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="720" as="sourcePoint" />
+            <mxPoint x="530" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
